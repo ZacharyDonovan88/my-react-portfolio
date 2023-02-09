@@ -1,0 +1,254 @@
+/* general */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth
+    }
+
+.h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 42px;
+    box-shadow: 5px 2px rgb(109, 109, 109);
+    margin-top: 40px;
+}    
+
+/* end of general */
+
+
+/* The sidebar menu */
+
+#sidebar-padding {
+    padding-left: 200px;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav h2 {
+    font-size: 30px;
+    color: #f1f1f1;
+    text-align: center;
+  }
+/* end of navbar menu */
+
+
+/* main page */
+
+.main {
+    position: relative;
+}
+
+.main header {
+    position: absolute;
+    top: 50%;
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.main h1 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 50px;
+    z-index: 3;
+    text-shadow: 5px 5px 10px rgb(122, 122, 122);
+    text-align: center;
+}
+    
+#my-image {
+    z-index: 2;
+    width: 20%;
+    min-width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    display: block;
+}
+
+
+.hero-image {
+    background-image: url(../src/assets/images/sunset.jpg);
+    background-color: #cccccc;
+    height: 1500px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+    filter: brightness(90%);
+    z-index: 1;
+}
+
+.icons {
+    z-index: 4;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    color: #f1f1f1;
+    padding: 8px;
+}
+
+.iconcen {
+    display: flex;
+}
+
+.skip-to-content {
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    opacity: 0;
+}
+
+.skip-to-content:focus {
+    opacity: 1;
+}
+
+/* end of main */
+
+
+/* Work */
+
+.worksec {
+
+}
+
+.worksec img {
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row::after {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+.worksec img:hover {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.3;
+    transition: .5s ease;
+    
+  }
+  .worksec .work-container {
+    position: relative;
+    max-width: 1000px;
+  }
+
+  .worksec a {
+    position: relative;
+    width: 50%;
+    height: 15vw;
+    box-shadow: 5px 5px 5px black;
+  }
+  .worksec a:first-of-type {
+    width: 100%;
+  }
+
+  .worksec .card-content {
+    position: absolute;
+    bottom: 9px;
+    left: 9px;
+    right: 9px;
+    z-index: 3;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 8px;
+    pointer-events: none;
+    text-align: left;
+
+  }
+  .worksec .card-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(45deg, black, transparent);
+}
+
+  #gameid {
+    left: 680px;
+    bottom: 300px;
+  }
+
+ 
+/* end of work */
+
+
+/* contact me */
+.concenter {
+    display: inline-block;
+}
+
+/* end of contact me */
+
+
+
+
+@media screen and (max-width: 600px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      #sidebar-padding {
+        padding-left: 5px;
+        padding-right: 5px;
+    
+    }
+    .main header {
+        left: 50%;
+    }
+  }
