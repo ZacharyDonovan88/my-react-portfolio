@@ -147,6 +147,11 @@ html{
     opacity: 1;
 }
 
+.sidenav a.active {
+    color: #ffff00;
+  }
+  
+
 /* end of main */
 
 
